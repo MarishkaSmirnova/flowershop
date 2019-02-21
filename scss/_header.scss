@@ -1,0 +1,43 @@
+// navbar
+header {
+    background-color: $nav-background;
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    color:$nav-font-color;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+         text-decoration: none;
+        display: block;
+        line-height: 42px;
+        padding: 0 20px;
+        color: $nav-font-color;
+        #{$link-hover-selector} {
+        border-bottom: 2px solid $nav-border-hover;
+    }
+    }
+}
+
+// LOGO
+.logo {
+    width: 400px;
+    padding: 0 50px;
+    position: relative;
+    z-index: 9999;
+    img{
+        display: block;
+    }
+}
+
+.logo-link {
+    background-color: white;
+    display: block;
+    padding: 8px;
+}
+
+
