@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* Resets */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Image reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
