@@ -1,43 +1,200 @@
 // navbar
 header {
-    background-color: $nav-background;
     display: flex;
     justify-content: center;
-    height: 42px;
-    color:$nav-font-color;
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        display: flex;
-    }
-    nav a {
-         text-decoration: none;
-        display: block;
-        line-height: 42px;
-        padding: 0 20px;
-        color: $nav-font-color;
-        #{$link-hover-selector} {
-        border-bottom: 2px solid $nav-border-hover;
-    }
+    color: black;
+    background-color: $page-background-color;
+
+    .container-nav {
+        position: relative;
+        // display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: 9999;
+
+        nav a {
+            display: block;
+            padding: 35px;
+            line-height: 15px;
+            text-decoration: none;
+            color: $nav-font-color;
+
+            #{$link-hover-selector} {
+                color: $nav-hover-color;
+                text-decoration: none;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            justify-content: flex-start;
+        }
+
+        .logo-link {
+            margin: 0;
+        }
+
+        nav li {
+            flex: 1;
+        }
     }
 }
 
-// LOGO
+.container-nav {
+    font-size: 1.1em;
+    position: relative;
+    max-width: 1200px;
+    font-family: 'Merriweather', serif;
+
+    ul {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        margin: 10px 30px;
+    }
+
+    a {
+        #{$link-hover-selector} {
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-menu {
+    display: none;
+}
+
 .logo {
-    width: 400px;
+    width: 200px;
     padding: 0 50px;
     position: relative;
     z-index: 9999;
-    img{
-        display: block;
-    }
 }
 
 .logo-link {
-    background-color: white;
     display: block;
     padding: 8px;
+
+    img {
+        display: block;
+        width: 100px;
+        position: absolute;
+        left: 103%;
+    }
 }
 
+.shop-link {
+    margin-right: 70px;
+}
 
+// hamburger button
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: $nav-hover-color;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* end of hamburger button */
+
+@media screen and (max-width:$phoneLandscape) {
+    .btn-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding-top: 45px;
+        padding-left: 0;
+    }
+
+    header {
+        nav {
+            display: none;
+            width: 100%;
+            clear: both;
+
+            ul {
+                display: block;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    .logo-link img {
+        position: static;
+    }
+
+    .container_button {
+        #{$link-hover-selector} {
+            outline: none;
+        }
+    }
+
+    .show {
+        header {
+            height: auto;
+
+            .btn-menu {
+                padding: 51px 0;
+            }
+
+            nav {
+                display: block;
+
+                a {
+                    padding: 10px;
+                }
+
+                ul {
+                    display: block;
+                }
+            }
+
+            .container_button {
+                #{$link-hover-selector} {
+                    outline: none;
+                }
+            }
+
+            .logo-link img {
+                position: static;
+                margin-left: 3%;
+            }
+        }
+    }
+}
