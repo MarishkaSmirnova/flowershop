@@ -1,0 +1,74 @@
+//footer
+footer {
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color:$page-background-color;
+    text-align: center;
+    border-top: solid 1px #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 66px;
+    margin-left: 66px;
+    font-family: $main-font;
+    font-size: 12px;
+    color: $nav-font-color;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+.location{
+    display: flex;
+    justify-content: center;
+    padding-right: 105px;
+}
+
+.email-phone {
+    display:flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+.social {
+    display: flex;
+    flex:flex-end;
+    padding: 25px;
+   
+    
+}
+
+.facebook{
+    padding-right:7px;
+}
+
+.twitter{
+    padding-right:7px;
+}
+
+.instagram {
+    padding-right:10px;
+}
+
+.copyright {
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(234,160,163);
+    opacity: 0.5;
+    text-align: center;
+    line-height: 5px;
+    border-top: solid 1px #ccc;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top: 0px;
+    margin-right: 66px;
+    margin-left: 66px;
+    font-family: $main-font;
+    font-size: 12px;
+    color: $nav-font-color;
+}
