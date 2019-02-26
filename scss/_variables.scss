@@ -4,12 +4,21 @@ $page-background-color:#fbf9f7;
 $nav-background:#faf7f7;
 $nav-font-color:rgb(104, 104, 104);
 $nav-hover-color:rgb(225, 166, 166);
+$img-hover-background:rgb(240, 207, 202);
+$white:white;
+$shop-photo-borders:rgba(231, 229, 229, 0.5);
+$shop-img-hover-photo:#333;
+$shop-button-bgc:rgb(225, 222, 222);
+$shop-button-hover-bgc:rgba(240, 158, 158, 0.5);
+$shob-button-border:rgba(240, 158, 158, 0.5);
+$shop-button-hover:rgba(99, 24, 24, 0.1);
 
 //Fonts
 $main-font:'PT Serif', serif;
 
 // Utility variables
 $link-hover-selector: '&:hover, &:focus, &:active';
+$hover:"&:hover";
 
 //hero images
 $hero-height:60vh;
@@ -20,9 +29,15 @@ $hero-height:60vh;
     @return #{$px/$bc}em; 
 }
 
+// Transform properties shop page
+$scale:scale(1, 1);
+
 // Media Query Breakpoints
+$desktopLarge:em(1077);
 $desktopMedium: em(1250);
 $tabletLandscape: em(1024);
 $tabletPortrait: em(850);
-$phoneLandscape: em(670);
+$phoneLandscape: em(680);
+$phone1:em(567);
+$phone2:em(540);
 $phonePortrait: em(426);
