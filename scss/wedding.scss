@@ -1,0 +1,37 @@
+//wedding page
+
+.wedding-banner {
+    margin: auto 100px;
+    padding:10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.bride-row {
+    margin:auto;
+    padding: 20px;
+    padding-left:122px;
+}
+.boutonniere-row{
+    margin: auto;
+    padding: 20px;
+    padding-right:122px;
+}
+
+.maid-row{
+    margin: auto;
+    padding: 20px;
+    padding-left:122px;
+}
+
+.cp-row{
+    margin:auto;
+    padding:20px;
+    padding-right:122px;
+}
