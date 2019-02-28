@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Wild Vine</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contacts.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </head>
 
@@ -38,22 +39,65 @@
         <div class="bar3"></div>
     </div>
 </div>
-
 </header>
-
-
 </div><!-- end of wrapper -->
 
+
 <main>
- 
 <div class="hero-section">
     <img src="images/contact-copy.jpg" alt="Poppy">
-    <img src="images/contact-copy.jpg" alt="Poppy">  
-
-
-    
+    <img src="images/contact-copy.jpg" alt="Poppy">   
 </div><!--end hero-section--> 
 
+<section><!--Contact info start-->
+<div>
+    <h2>Contact</h2>
+    <p>Have a question or comment?<br>
+    Feel free to drop us a line here.</p>
+</div>
+<div>
+    <p>Phone: 604.555.0011</p>
+    <p>Email: info@thewildvine.ca</p>
+</div>
+<div>
+    <p>Address: The Wild Vine<br>
+                142 Rosalyn Dr.<br>
+                Vancouver, Bc<br>
+    </p>
+</div>
+<div>
+    <p>Hours: Monday - Friday 10am - 6pm<br>
+              Sunday & Saturdays 11am - 5pm<br>
+    </p>
+</div>
+</section>
+
+<!--Form Section-->
+<Form action="/my-contact-form" method="post">
+<div>
+    <label for="name">Name:</label>
+    <input for="text" id="name" name="guest_name">
+</div> <br>
+<div>
+    <label for="phone">Phone:</label>
+    <input type="phone" id="phone" name="guest_name">
+</div> <br>
+<div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="guest_mail">
+</div><br>
+<div class="subscribe">
+<input type="checkbox" id="subscribe" name="sub1[]" value="subscribe" checked>
+<label for="box-01">Subscribe to our Newsletter</label>
+</div>
+<div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+</div> <br>
+<div class="button">
+    <button type="submit">Submit</button>
+</div>
+</Form>
 
 
 
