@@ -1,7 +1,7 @@
 //Contact Page
 .hero-section {
-    background-image: url('../images/contact-copy.jpg') 50% no-repeat;
-    background-size: cover;
+    // background-image: url('../images/contact-copy.jpg') 50% no-repeat;
+    // background-size: cover;
     text-align: center;
     display: flex;
     //height: $hero-height;
@@ -9,23 +9,40 @@
     justify-content: center;
     padding-left:50px;
     padding-right: 50px;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 30px;
     margin-top: 0; 
+
+    .hero-img {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    img {
+        display: block;
+    }
 }
 
-/*.hero-text{
+.contact-column {
     display: flex;
-    align-content: center;
-    font-size: 15px;
-    padding-top:0px;
-    margin:auto;
-    text-align: center;
-    color:black;
-    position: relative;
-} */
+    flex-direction: column;
+    padding-left: 110px;
+    padding-right:90px;
+}
+
+.contact-form {
+    padding-left:100px;
+    padding-right:90px;
+}
+
+.flex-container-contact {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
 /* Form start */
-form {
+form { 
    margin:0 auto;
    width: 400px;
    padding: 1em;
@@ -33,7 +50,7 @@ form {
    border-radius: 1em;
 }
 
-form div + div{ 
+form div + div { 
     margin-top:1em;
 }
 
@@ -72,8 +89,7 @@ ul {
 }
 
 .subscribe {
-    width:100%;
-    
+    width:100%;  
 }
 
 .email_subscribe {
