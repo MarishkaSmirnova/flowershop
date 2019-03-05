@@ -1,10 +1,11 @@
 //Contact Page
+@import 'variables';
+
 .hero-section {
     // background-image: url('../images/contact-copy.jpg') 50% no-repeat;
     // background-size: cover;
     text-align: center;
     display: flex;
-    //height: $hero-height;
     align-items: center;
     justify-content: center;
     padding-left:50px;
@@ -14,8 +15,10 @@
     margin-top: 0; 
 
     .hero-img {
-        display: flex;
-        align-items: flex-start;
+       display:block;
+       @media (max-width: $tabletPortrait){
+           display: none;
+       }
     }
 
     img {
@@ -26,20 +29,31 @@
 .contact-column {
     display: flex;
     flex-direction: column;
-    padding-left: 110px;
-    padding-right:90px;
+    // padding-left: 110px;
+    // padding-right:90px;
 }
 
 .contact-form {
-    padding-left:100px;
-    padding-right:90px;
-    padding-bottom: 30px;
+    // padding-left:100px;
+    // padding-right:90px;
+    // padding-bottom: 30px;
 }
 
 .flex-container-contact {
     display: flex;
     flex-direction:row;
-    justify-content: center;
+    padding: 30px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .contact-column {
+        flex: 1;
+    }
+
+    .contact-form {
+        flex: 0 0 400px;
+    }
+
 }
 
 /* Form start */
@@ -55,34 +69,60 @@ form div + div {
     margin-top:1em; 
 }
 
-label {
+.form-group:not(.message) {
     display: flex;
-    width:90px;
-    text-align: right;
+    align-items: center;
 }
 
-input, textarea {
-    font: 1em 'Merriweather', serif;
-    width:300px;
-    padding-right: 0px;
-    box-sizing: border-box;
+.form-group:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.form-group:not(.subscribe) label {
+    //display: flex;
+    width:90px;
+    text-align: right;
+    margin-right: 16px;
+}
+
+.subscribe label {
+    margin-left: 8px;
+}
+
+input:not([type="checkbox"]), textarea {
+    //font: 1em 'Merriweather', serif;
+    font: {
+        family: 'Merriweather', serif;
+        size: 0.85em;
+    }
+    padding: 5px;
+    width: 100%;
+    //padding-right: 0;
+    //box-sizing: border-box;
     border: 1px solid black;
 }
 
 input:focus, textarea:focus {
-border-color: #000;
+    border-color: #000;
+}
+
+.form-group.message label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 textarea {
-    vertical-align: top;
-    align-content: left;
-    height: 5em;
+    //vertical-align: top;
+    //align-content: left;
+    height: 180px;
 }
 
 .button {
-    padding-left:90px;
-    margin-left: .5em;
-    align-items: center;
+    //padding-left:90px;
+    //margin-left: .5em;
+    //align-items: center;
+    justify-content: center;
 }
 
 ul {
@@ -96,3 +136,7 @@ ul {
 .email_subscribe {
     display: flex;
 }
+
+
+/*Start Media Query*/
+

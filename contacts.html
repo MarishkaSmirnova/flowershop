@@ -8,7 +8,7 @@
     <title>The Wild Vine</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/contacts.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -43,30 +43,32 @@
 <main>
 <div class="hero-section">
     <div class="hero-img">
-        <img src="images/contact-copy.jpg" alt="Poppy">
-        <img src="images/contact-copy.jpg" alt="Poppy">   
+        <picture>
+                <img src="images/contact-pano.jpg" alt="Poppy"> 
+                <source srcset="images/p.png" media="(max-width: 850px)">
+        </picture>
     </div>
 </div><!--end hero-section--> 
 
 <!--Contact info start-->
 <div class="flex-container-contact">
     <div class="contact-column">
-        <div>
+        <div class="contact-info-group">
             <h2>Contact Us</h2>
-            <p>Have a question or comment?<br>
-            Feel free to drop us a line here.</p>
+            <p>Have a question or comment?</p>
+            <p>Feel free to drop us a line here.</p>
         </div>
-        <div>
+        <div class="contact-info-group">
             <p>Phone: 604.555.0011</p>
             <p>Email: info@thewildvine.ca</p>
         </div>
-        <div>
-            <p>Address: The Wild Vine<br>
+        <div class="contact-info-group">
+            <address>Address: The Wild Vine<br>
                         142 Rosalyn Dr.<br>
                         Vancouver, Bc<br>
-            </p>
+            </address>
         </div>
-        <div>
+        <div class="contact-info-group">
             <p>Hours: Monday - Friday 10am - 6pm<br>
                     Sunday & Saturdays 11am - 5pm<br>
             </p>
@@ -75,30 +77,30 @@
 
     <!--Form Section-->
     <div class="contact-form">
-    <form action="/my-contact-form" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input for="text" id="name" name="guest_name">
-    </div> <br>
-    <div>
-        <label for="phone">Phone:</label>
-        <input type="phone" id="phone" name="guest_name">
-    </div> <br>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="guest_mail">
-    </div><br>
-    <div class="subscribe">
-    <input type="checkbox" id="subscribe" name="sub1[]" value="subscribe" checked>
-    <label for="box-01">Subscribe to our Newsletter</label>
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div> <br>
-    <div class="button">
-        <button type="submit">Submit</button>
-    </div>
+        <form action="/my-contact-form" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input for="text" id="name" name="guest_name">
+            </div> 
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="phone" id="phone" name="guest_name">
+            </div>
+            <div class="form-group">
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="guest_mail">
+            </div>
+            <div class="subscribe form-group">
+                <input type="checkbox" id="subscribe" name="sub1[]" value="subscribe" checked>
+                <label for="box-01">Subscribe to our Newsletter</label>
+            </div class="form-group">
+            <div class="form-group message">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button form-group">
+                <button type="submit">Submit</button>
+            </div>
     </form>
 </div> <!--end contact-form-->
 </div><!--end flex-container-contact-->
