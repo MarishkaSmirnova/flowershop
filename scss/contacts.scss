@@ -33,6 +33,7 @@
 .contact-form {
     padding-left:100px;
     padding-right:90px;
+    padding-bottom: 30px;
 }
 
 .flex-container-contact {
@@ -51,7 +52,7 @@ form {
 }
 
 form div + div { 
-    margin-top:1em;
+    margin-top:1em; 
 }
 
 label {
@@ -72,7 +73,7 @@ input:focus, textarea:focus {
 border-color: #000;
 }
 
-textarea{
+textarea {
     vertical-align: top;
     align-content: left;
     height: 5em;
@@ -89,7 +90,7 @@ ul {
 }
 
 .subscribe {
-    width:100%;  
+    width:100%;    
 }
 
 .email_subscribe {
