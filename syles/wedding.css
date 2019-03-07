@@ -1,0 +1,46 @@
+.wedding-banner {
+  margin: auto 15px;
+  padding-left: 15px;
+  padding: 10px; }
+
+.bridal-bouquets {
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: center; }
+
+.bride-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  padding-top: 10px;
+  padding-left: 122px; }
+
+.boutonniere-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  padding-right: 122px; }
+
+.maid-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  padding-left: 122px; }
+
+.cp-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  padding-right: 122px; }
+
+/*# sourceMappingURL=wedding.css.map */

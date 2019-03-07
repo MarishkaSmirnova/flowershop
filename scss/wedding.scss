@@ -1,4 +1,5 @@
 //wedding page
+@import 'variables'; 
 
 .wedding-banner {
     margin: auto 15px;
@@ -19,28 +20,68 @@
 }
 
 .bride-row {
+    display:flex;
+    flex-direction: row;
     margin:auto;
     padding: 20px;
     padding-top: 10px;
     padding-left:122px;
 }
 .boutonniere-row{
+    display: flex;
+    flex-direction: row;
     margin: auto;
     padding: 20px;
     padding-right:122px;
 }
 
 .maid-row {
+    display: flex;
+    flex-direction: row;
     margin: auto;
     padding: 20px;
     padding-left:122px;
 }
 
 .cp-row {
+    display: flex;
+    flex-direction: row;
     margin:auto;
     padding:20px;
     padding-right:122px;
 }
 
-/*Start Media Query */
 
+@media screen and (max-width: $desktopWeddingPage) {
+    .banner-6 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: $tabletWeddingPage){
+    .banner-5{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $tabletWeddingPages){
+    .banner-4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $tabletBannerWedding){
+    .banner-3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $phone3){
+    .banner-2{
+        display: none;
+    }
+    .banner-1{
+        display: none;
+    }
+}
