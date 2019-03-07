@@ -22,6 +22,7 @@
 .bride-row {
     display:flex;
     flex-direction: row;
+    flex-wrap:wrap;
     margin:auto;
     padding: 20px;
     padding-top: 10px;
@@ -30,6 +31,7 @@
 .boutonniere-row{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     margin: auto;
     padding: 20px;
     padding-right:122px;
@@ -38,6 +40,7 @@
 .maid-row {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     margin: auto;
     padding: 20px;
     padding-left:122px;
@@ -46,6 +49,7 @@
 .cp-row {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     margin:auto;
     padding:20px;
     padding-right:122px;
@@ -53,14 +57,14 @@
 
 
 @media screen and (max-width: $desktopWeddingPage) {
-    .banner-6 {
+    .banner-3 {
         display: none;
     }
 }
 
 
 @media screen and (max-width: $tabletWeddingPage){
-    .banner-5{
+    .banner-6{
         display: none;
     }
 }
@@ -72,16 +76,16 @@
 }
 
 @media screen and (max-width: $tabletBannerWedding){
-    .banner-3{
+    .banner-1{
         display: none;
     }
 }
 
-@media screen and (max-width: $phone3){
+@media screen and (max-width: $phoneLandscape){
     .banner-2{
         display: none;
     }
-    .banner-1{
+    .banner-5{
         display: none;
     }
 }
