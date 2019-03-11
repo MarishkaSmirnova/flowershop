@@ -61,26 +61,26 @@
         display: none;
     }
 
-    .wedding-banner{
+    .wedding-banner {
         display: flex;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: $tabletWedding){
-    .bride-3{
+    .bride-3 {
         display: none;
     }
 
-    .bou-4{
+    .bou-4 {
         display: none;
     }
 
-    .maid-four{
+    .maid-four {
         display: none;
     }
 
-    .cp4{
+    .cp4 {
         display: none;
     }
 }
@@ -90,7 +90,7 @@
         display: none;
     }
 
-    .wedding-banner{
+    .wedding-banner {
         display: flex;
         justify-content: center;
     }
@@ -99,36 +99,36 @@
         display: none;
     }
 
-    .wedding-banner{
+    .wedding-banner {
         display: flex;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: $tabletBannerWedding){
-    .banner-1 {
+    .banner-1, .banner-4 {
         display: none;
     }
 }
 
 @media screen and (max-width: $tabletWeddingPage){
     .bride-2,
-    .bride-3{
+    .bride-3 {
                 display: none;
     }
 
     .bou-3,
-    .bou-4{
+    .bou-4 {
             display: none;
     }
 
     .maid-three,
-    .maid-four{
+    .maid-four {
             display: none;
     }
 
     .cp3,
-    .cp4{
+    .cp4 {
         display: none;
     }
 }
@@ -142,41 +142,58 @@
         display: none;
     }
 
-    .cp2{
+    .cp2 {
         display: none;
     }
 
-    .cp-row{
+    .cp-row {
         display: flex;
         justify-content: center;
     }
 
-    .maid-two{
+    .maid-two {
         display: none;
     }
 
-    .maid-row{
+    .maid-row {
         display: flex;
         justify-content: center;
     }
 
-    .bou-2{
+    .bou-2 {
         display: none;
     }
 
-    .boutonniere-row{
+    .boutonniere-row {
         display: flex;
         justify-content: center;
     }
 
-    .bride-4{
+    .bride-4 {
         display: none;
     }
 
-    .bride-row{
+    .bride-row {
         display: flex;
         justify-content: center;
     }  
+
 }
 
 
+
+@media screen and (max-width:$phone1){
+    .flex-container {
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+
+    .flower-type {
+        padding: 0;
+        padding-bottom: 10px;
+        padding-top:10px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
