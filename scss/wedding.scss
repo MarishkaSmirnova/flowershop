@@ -28,7 +28,7 @@
     padding-top: 10px;
     padding-left:122px;
 }
-.boutonniere-row{
+.boutonniere-row {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -60,32 +60,105 @@
     .banner-3 {
         display: none;
     }
+
+    .wedding-banner{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
 @media screen and (max-width: $tabletWeddingPage){
-    .banner-6{
+    .banner-6 {
         display: none;
     }
-}
 
-@media screen and (max-width: $tabletWeddingPages){
-    .banner-4{
+    .wedding-banner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-4 {
         display: none;
+    }
+
+    .wedding-banner{
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: $tabletBannerWedding){
-    .banner-1{
+    .banner-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $tabletWeddingPage){
+    .bride-2,
+    .bride-3{
+                display: none;
+    }
+
+    .bou-3,
+    .bou-4{
+            display: none;
+    }
+
+    .maid-three,
+    .maid-four{
+            display: none;
+    }
+
+    .cp3,
+    .cp4{
         display: none;
     }
 }
 
 @media screen and (max-width: $phoneLandscape){
-    .banner-2{
+    .banner-2 {
         display: none;
     }
-    .banner-5{
+
+    .banner-5 {
         display: none;
+    }
+
+    .cp3{
+        display: none;
+    }
+
+    .cp-row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .maid-three{
+        display: none;
+    }
+
+    .maid-row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bou-3{
+        display: none;
+    }
+
+    .boutonniere-row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bride-3{
+        display: none;
+    }
+
+    .bride-row{
+        display: flex;
+        justify-content: center;
     }
 }
+
