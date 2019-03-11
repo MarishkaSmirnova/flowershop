@@ -67,6 +67,23 @@
     }
 }
 
+@media screen and (max-width: $tabletWedding){
+    .bride-3{
+        display: none;
+    }
+
+    .bou-4{
+        display: none;
+    }
+
+    .maid-four{
+        display: none;
+    }
+
+    .cp4{
+        display: none;
+    }
+}
 
 @media screen and (max-width: $tabletWeddingPage){
     .banner-6 {
@@ -159,8 +176,7 @@
     .bride-row{
         display: flex;
         justify-content: center;
-    }
-
-    
+    }  
 }
+
 
