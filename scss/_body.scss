@@ -119,7 +119,6 @@ body {
 
 .box {
     width: 254px;
-    // border: 2px solid red;
     margin-top: 10px;
 }
 
@@ -208,75 +207,6 @@ div[class*=button1] {
     background: $shop-button-bgc;
 }
 
-
-/*
-   BUTTON STYLING in sass for Michael to check
-  */
-
-// .btn {
-//     position: relative;
-//     color: $nav-font-color;
-//     width: 100px;
-//     height: 30px;
-//     line-height: 64px;
-//     transition: all 0.3s;
-//     font-size: 0.8em;
-
-//     span {
-//         position: relative;
-//         top: -18px;
-//         transition: all 0.3s;
-//         @include transform($scale);
-//     }
-
-//     &:before {
-//         content: '';
-//         position: absolute;
-//         transition: all 0.3s;
-//         bottom: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: 1;
-//         left: 4px;
-//         z-index: 1;
-//         opacity: 0;
-//         background: rgba(99, 24, 24, 0.1);
-//         transform: scale(0.1, 1);
-
-//     }
-
-//     &:after {
-//         position: absolute;
-//         transition: all 0.3s;
-//         bottom: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: 1;
-//     }
-// }
-// .btn-one{
-//     &:after {
-//         transition: all 0.3s;
-//         border: 1px solid $shob-button-border;
-//         #{$hover} {
-//             transform: scale(1, .1);
-//             opacity: 0;
-//                 }
-//     }
-//     &:before{
-//     left: 4px;
-//     z-index: 1;
-//     opacity: 0;
-//     background: $shop-button-hover;
-//     transform: scale(0.1, 1);
-//         #{$hover} {
-//             opacity: 1;
-//             transform: scale(1, 1);
-//         }
-// }
-
 .btn {
     position: relative;
     color: $nav-font-color;
@@ -321,7 +251,7 @@ div[class*=button1] {
 
 .btn-one::after {
     transition: all 0.3s;
-    border: 1px solid $shob-button-border;
+    border: 1px solid $shop-button-border;
 }
 
 .btn-one:hover::after {

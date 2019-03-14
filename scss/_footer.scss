@@ -1,6 +1,6 @@
 //footer
 footer {
-    color: black;
+    color: $black;;
     justify-content: center;
     background-color:$page-background-color;
     text-align: center;
@@ -45,14 +45,14 @@ footer {
 }
 
 .copyright {
-    color: black;
+    color: $black;
     display: flex;
     justify-content: center;
-    background-color:rgb(234,160,163);
+    background-color:$copy-background-color;
     opacity: 0.5;
     text-align: center;
     line-height: 5px;
-    border-top: solid 1px #ccc;
+    border-top: solid 1px $copyright-border-top;
     padding-top:0px;
     padding-right:0px;
     padding-bottom:0px;

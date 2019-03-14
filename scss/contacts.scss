@@ -24,12 +24,6 @@
     }
 }
 
-// .contact-column {
-//     // display: flex;
-//     // flex-direction: column;
-// }
-
-
 .flex-container-contact {
     display: flex;
     flex-direction:row;
@@ -88,7 +82,7 @@ form {
    margin:0 auto;
    //width: 400px;
    padding: 1em;
-   border:1px solid black;
+   border:1px solid $black;
    border-radius: 1em;
 }
 
@@ -124,11 +118,11 @@ input:not([type="checkbox"]):not([type="radio"]), textarea {
     }
     padding: 5px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid $black;
 }
 
 input:focus, textarea:focus {
-    border-color: #000;
+    border-color: $black;
 }
 
 
@@ -164,7 +158,7 @@ ul {
     select {
         padding: 5px;
         width:100%;
-        border:1px solid black;
+        border:1px solid $black;
     }
 }
 
