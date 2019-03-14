@@ -116,7 +116,7 @@ form div + div {
     margin-left: 8px;
 }
 
-input:not([type="checkbox"]),input:not([type="radio"]), textarea {
+input:not([type="checkbox"]):not([type="radio"]), textarea {
     //font: 1em 'Merriweather', serif;
     font: {
         family: 'Merriweather', serif;
@@ -158,7 +158,13 @@ ul {
     display: flex;
 }
 
+.drop-down{
+    display: flex;
+    justify-content: start;
+    margin-left:20px;
+}
 
-
-
+.drop-down title{
+   padding-left:10px;
+}
 
