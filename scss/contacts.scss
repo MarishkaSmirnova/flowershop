@@ -116,7 +116,7 @@ form div + div {
     margin-left: 8px;
 }
 
-input:not([type="checkbox"]), textarea {
+input:not([type="checkbox"]),input:not([type="radio"]), textarea {
     //font: 1em 'Merriweather', serif;
     font: {
         family: 'Merriweather', serif;
@@ -158,10 +158,6 @@ ul {
     display: flex;
 }
 
-.radio {
- display: block;
-padding:10px;
-}
 
 
 
