@@ -76,8 +76,19 @@
     </div><!--end contact-column-->
 
     <!--Form Section-->
+   
     <div class="contact-form">
         <form action="/my-contact-form" method="post">
+
+            <div class="drop-down">
+                <label for="title">Title:</label>
+                <select name="title" id="title">
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Miss">Miss.</option>
+                    <option value="prefer">Prefer not to say</option>
+                </div>
+
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input for="text" id="name" name="guest_name">
@@ -91,9 +102,13 @@
                 <input type="email" id="mail" name="guest_mail">
             </div>
             <div class="subscribe form-group">
-                <input type="checkbox" id="subscribe" name="sub1[]" value="subscribe" checked>
+                <input type="checkbox" id="subscribe" name="sub1[]" value="subscribe">
                 <label for="box-01">Subscribe to our Newsletter</label>
-            </div class="form-group">
+            </div>
+            <div class="radio form-group">
+                <input type="radio" id="events" name="events" value="events">
+                <label for="events">Events</label>
+          </div>
             <div class="form-group message">
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
