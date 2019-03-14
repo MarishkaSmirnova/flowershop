@@ -101,6 +101,10 @@ form div + div {
     align-items: center;
 }
 
+.name{
+    display: flex;
+    align-items: center;
+}
 .form-group:not(:last-child){
     margin-bottom: 20px;
 }
@@ -157,7 +161,9 @@ ul {
     display: flex;
 }
 
-.form  {
+.radio  {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
    padding-right:300px;
 }
