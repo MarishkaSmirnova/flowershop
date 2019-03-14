@@ -101,10 +101,6 @@ form div + div {
     align-items: center;
 }
 
-.name{
-    display: flex;
-    align-items: center;
-}
 .form-group:not(:last-child){
     margin-bottom: 20px;
 }
@@ -135,6 +131,7 @@ input:focus, textarea:focus {
     border-color: #000;
 }
 
+
 .form-group.message label {
     display: block;
     margin-bottom: 10px;
@@ -161,11 +158,9 @@ ul {
     display: flex;
 }
 
-.radio  {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-   padding-right:300px;
+.radio {
+ display: block;
+padding:10px;
 }
 
 
