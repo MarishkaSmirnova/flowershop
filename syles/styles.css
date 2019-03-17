@@ -71,7 +71,7 @@ header {
     display: block;
     width: 100px;
     position: absolute;
-    left: 140%; }
+    left: 148%; }
 
 .shop-link {
   margin-right: 70px; }
@@ -155,14 +155,13 @@ body {
   flex: auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px 0px; }
+  margin: 70px 0px; }
 
 .img_container {
   position: relative;
   width: 150px;
   margin: 10px; }
   .img_container img {
-    border-radius: 10px;
     display: block; }
 
 .overlay {
@@ -175,8 +174,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #f0cfca;
-  border-radius: 10px; }
+  background-color: #f0cfca; }
 
 .text_line {
   color: white;
@@ -198,7 +196,6 @@ body {
   height: 30px;
   border: 1px solid white;
   background-color: white;
-  border-radius: 10%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -299,9 +296,6 @@ div[class*=button1] {
 .container-1 {
   background: #e1dede; }
 
-/*
-   BUTTON STYLING in sass for Michael to check
-  */
 .btn {
   position: relative;
   color: #686868;
@@ -387,37 +381,31 @@ div[class*=button1] {
 
 footer {
   color: black;
-  display: flex;
   justify-content: center;
   background-color: #fbf9f7;
   text-align: center;
   border-top: solid 1px #ccc;
-  width: 1300px;
+  width: 100%;
   font-family: "PT Serif", serif;
   font-size: 12px;
-  color: #686868;
-  margin-left: 67px; }
+  color: #686868; }
 
 .footer-info {
   display: flex;
-  justify-content: center;
   justify-content: space-evenly; }
 
 .location {
   display: flex;
-  justify-content: center;
-  padding-right: 105px; }
+  justify-content: center; }
 
 .email-phone {
   display: flex;
-  justify-content: center;
-  padding-right: 60px; }
+  justify-content: center; }
 
 .social {
   display: flex;
   flex: flex-end;
-  padding: 25px;
-  padding-right: 5px; }
+  padding: 25px 0; }
 
 .facebook {
   padding-right: 7px; }
@@ -438,10 +426,8 @@ footer {
   line-height: 5px;
   border-top: solid 1px #ccc;
   padding-top: 0px;
-  margin-left: 68px;
   padding-right: 0px;
   padding-bottom: 0px;
-  width: 1300px;
   font-family: "PT Serif", serif;
   font-size: 12px;
   color: #686868; }

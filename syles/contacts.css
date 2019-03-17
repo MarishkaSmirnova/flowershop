@@ -74,7 +74,7 @@ form div + div {
 .subscribe label {
   margin-left: 8px; }
 
-input:not([type="checkbox"]), textarea {
+input:not([type="checkbox"]):not([type="radio"]), textarea {
   font-family: 'Merriweather', serif;
   font-size: 0.85em;
   padding: 5px;
@@ -82,7 +82,7 @@ input:not([type="checkbox"]), textarea {
   border: 1px solid black; }
 
 input:focus, textarea:focus {
-  border-color: #000; }
+  border-color: black; }
 
 .form-group.message label {
   display: block;
@@ -90,7 +90,7 @@ input:focus, textarea:focus {
   text-align: left; }
 
 textarea {
-  height: 180px; }
+  height: 150px; }
 
 .button {
   justify-content: center; }
@@ -103,5 +103,13 @@ ul {
 
 .email_subscribe {
   display: flex; }
+
+.drop-down {
+  display: flex;
+  justify-content: start; }
+  .drop-down select {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black; }
 
 /*# sourceMappingURL=contacts.css.map */
